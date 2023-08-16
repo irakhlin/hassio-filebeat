@@ -1,16 +1,15 @@
 name: "Filebeat"
 description: "Filebeat addon that can be used to ship home-assistant.log file to your ES Cluster."
-version: "0.3.12"
+version: "0.4.9"
 image: "dckr.bulletproof.rs/mtodoric/hassio-filebeat/filebeat-{arch}"
 slug: "filebeat"
 init: false
 advanced: true
 journald: true
-url: https://github.com/maretodoric/hassio-filebeat
-apparmor: true
-homeassistant_api: true
-auth_api: true
+url: "https://github.com/irakhlin/hassio-filebeat"
 ingress: false
+docker_api: true
+startup: system
 homeassistant: 2022.3.1
 arch:
   - armv7
